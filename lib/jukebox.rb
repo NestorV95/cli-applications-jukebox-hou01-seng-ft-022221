@@ -29,7 +29,7 @@ end
 def play(songs)
 input = gets.strip
 puts "Please enter a song name or number:"
- input = gets.strip
+ 
  
  
   songs.each_with_index{|song, index|
