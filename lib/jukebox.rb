@@ -53,7 +53,6 @@ def run
  input = gets.strip
    
   case input
-  puts "Please enter a command:"
     when input === "help"
       help
     when input === "list"
