@@ -52,7 +52,7 @@ def run
  #run method that calls on all of these "helper" methods to implement the behavior of our program.
  input = nil
   puts "Please enter a command:"
-  while input != 'exit' do 
+  until input == 'exit' do 
     input = gets.chomp
     if input == 'help'
       help
@@ -60,8 +60,6 @@ def run
       list(songs)
       elsif input == 'play'
       play(songs)
-       elsif input == 'exit'
-        exit_jukebox
          else
           puts "oof"
     end
