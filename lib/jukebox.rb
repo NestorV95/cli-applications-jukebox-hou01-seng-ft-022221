@@ -32,9 +32,7 @@ def play(songs)
  
   songs.each_with_index do |song, index|
   if input == songs || input == (index+1).to_s 
-    p_song = song 
-    end 
-  end
+    
   if p_song = nil 
     puts "Invalid input, please try again"
   else 
