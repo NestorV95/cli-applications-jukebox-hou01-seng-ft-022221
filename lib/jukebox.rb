@@ -30,11 +30,11 @@ require"pry"
 def play(songs)
  puts "Please enter a song name or number:"
  input = gets.strip
- 
+
   
   songs.each_with_index{|song, index|
    if input == song || input == (index+1).to_s
-    puts "Playing #{song}"
+    puts "Playing #{song[index]}"
   else
     puts "Invalid input, please try again"
   end }
