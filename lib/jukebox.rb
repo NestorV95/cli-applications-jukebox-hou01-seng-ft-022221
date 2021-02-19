@@ -25,6 +25,8 @@ def list(songs)
  puts "#{index+1}. #{song}"}
 end
 
+require"pry"
+
 def play(songs)
  puts "Please enter a song name or number:"
  input = gets.chomp
@@ -36,6 +38,8 @@ def play(songs)
     puts "Invalid input, please try again"
   end 
  end
+ binding.pry
+ 
 end
 
 def exit_jukebox
