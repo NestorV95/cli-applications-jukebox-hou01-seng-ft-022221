@@ -31,12 +31,14 @@ def play(songs)
  input = gets.strip
  
   songs.each_with_index do |song, index|
-    song = songs[index]
-  if input == songs || (input-1) == index 
-    puts "Playing #{song}"
-  else
+  if input == songs || input == (index+1).to_s 
+    p_song = song 
+    end 
+  end
+  if p_song = nil 
     puts "Invalid input, please try again"
-  end 
+  else 
+    puts "Playing #{p_song}"
  end
 end
 
