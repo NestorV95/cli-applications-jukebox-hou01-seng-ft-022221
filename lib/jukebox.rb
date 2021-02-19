@@ -30,9 +30,10 @@ require"pry"
 def play(songs)
  puts "Please enter a song name or number:"
  input = gets.strip
+ 
     
-  if index.include?(input) || songs.include?(input)
-    puts "Playing #{songs}"
+  if input == songs || (input-1) == index 
+    puts "Playing #{song}"
   else
     puts "Invalid input, please try again"
   end 
