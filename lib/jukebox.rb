@@ -36,7 +36,7 @@ def play(list)
   else
     puts "Invalid input, please try again"
   end }
- binding.pry
+ #binding.pry
  
 end
 
