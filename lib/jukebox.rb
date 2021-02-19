@@ -28,9 +28,9 @@ end
 def play(list)
  puts "Please enter a song name or number:"
  input = gets.chomp
- 
   list.each_with_index do |song, index|
-   if input == song
+    
+   if input == song || input == (index+1).to_s
     puts "Playing #{song}"
   else
     puts "Invalid input, please try again"
