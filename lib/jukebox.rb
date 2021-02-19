@@ -50,11 +50,16 @@ end
 
 def run 
  #run method that calls on all of these "helper" methods to implement the behavior of our program.
-
-
-puts "Please enter a command:"
-input = gets.strip
-
-
-
+ input = gets.strip
+  while input != "exit"
+   puts "Please enter a command:"
+  case input
+    when "help"
+      help
+    when "list"
+      list(songs)
+    when "play"
+      play(songs)
+  end
+  end_jukebox  
 end
