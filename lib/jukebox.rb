@@ -27,7 +27,6 @@ end
 
 
 def play(songs)
-input = gets.strip
 puts "Please enter a song name or number:"
  
  
