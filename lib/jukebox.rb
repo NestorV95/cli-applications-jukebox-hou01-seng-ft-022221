@@ -53,15 +53,13 @@ def run
  input = gets.chomp
   puts "Please enter a command:"
   if input != 'exit' do 
-    
+    puts "Please enter a command:"
      elsif input == 'help'
       help
      elsif input == 'list'
       list(songs)
       elsif input == 'play'
       play(songs)
-         else
-          puts "oof"
     end
       exit_jukebox
     end
