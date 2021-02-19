@@ -35,7 +35,7 @@ def play(songs)
  
   songs.each_with_index do |song, index|
     
-  if index.include?(input.to_i) || songs.include?(input)
+  if index.include?(input) || songs.include?(input)
      index = songs.index(input)
     puts "Playing #{song[index+1]}"
   else
