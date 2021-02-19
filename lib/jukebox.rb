@@ -51,8 +51,9 @@ end
 def run 
  #run method that calls on all of these "helper" methods to implement the behavior of our program.
  input = gets.strip
-   puts "Please enter a command:"
+   
   case input
+  
     when input === "help"
       help
     when input === "list"
