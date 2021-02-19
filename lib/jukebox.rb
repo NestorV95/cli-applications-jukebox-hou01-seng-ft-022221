@@ -50,7 +50,7 @@ end
 
 def run 
  input = ""
- while
+ while 
   puts "Please enter a command:"
   if input != 'exit' do 
     puts "Please enter a command:"
