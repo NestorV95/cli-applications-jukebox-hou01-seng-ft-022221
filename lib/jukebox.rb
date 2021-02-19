@@ -50,4 +50,8 @@ end
 
 def run 
  #run method that calls on all of these "helper" methods to implement the behavior of our program.
+puts "Please enter a command:"
+input = gets.strip
+
+
 end
