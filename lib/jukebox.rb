@@ -35,7 +35,7 @@ def play(songs)
     
   if v_num.include?(number) || songs.include?(input)
      index = songs.index(input)
-    puts "Playing #{song[index]}"
+    puts "Playing #{song[index+1]}"
   else
     puts "Invalid input, please try again"
   end 
