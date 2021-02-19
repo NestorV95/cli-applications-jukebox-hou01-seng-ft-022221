@@ -54,13 +54,13 @@ def run
   while input != "exit"
    puts "Please enter a command:"
   case input
-    when "help"
+    when input === "help"
       help
-    when "list"
+    when input === "list"
       list(songs)
-    when "play"
+    when input === "play"
       play(songs)
-    when "exit"
+    when input === "exit"
       exit_jukebox
     end
   end
