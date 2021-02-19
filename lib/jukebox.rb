@@ -51,7 +51,6 @@ end
 def run 
  #run method that calls on all of these "helper" methods to implement the behavior of our program.
  input = gets.strip
-  while input != "exit"
    puts "Please enter a command:"
   case input
     when input === "help"
@@ -63,6 +62,4 @@ def run
     when input === "exit"
       exit_jukebox
     end
-  end
-  end_jukebox  
 end
