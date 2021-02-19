@@ -31,9 +31,9 @@ def play(songs)
  puts "Please enter a song name or number:"
  input = gets.strip
  number = input.to_i
- v_num = 
+ v_num = [1,2,3,4,5,6,7,8,9]
     
-   if number <  && songs.include?(input)
+  if v_num.include?(number) || songs.include?(input)
      index = songs.index(input)
     puts "Playing #{song[index]}"
   else
