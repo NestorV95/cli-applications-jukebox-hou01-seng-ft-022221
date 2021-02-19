@@ -50,7 +50,7 @@ end
 
 def run 
  #run method that calls on all of these "helper" methods to implement the behavior of our program.
- input = gets.strip
+ input = gets.chomp
     puts "Please enter a command:"
     
   case input
