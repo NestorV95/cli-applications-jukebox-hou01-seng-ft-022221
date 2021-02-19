@@ -50,10 +50,10 @@ end
 
 def run 
  #run method that calls on all of these "helper" methods to implement the behavior of our program.
- input = nil
+ input = gets.chomp
   puts "Please enter a command:"
   if input != 'exit' do 
-    input = gets.chomp
+    
      elsif input == 'help'
       help
      elsif input == 'list'
