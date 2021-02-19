@@ -25,10 +25,10 @@ def list(songs)
  puts "#{index+1}. #{song}"}
 end
 
-def play(list)
+def play(songs)
  puts "Please enter a song name or number:"
  input = gets.chomp
-  list.each_with_index do |song, index|
+  songs.each_with_index do |song, index|
     
    if input == "#{song}" || input == (index+1).to_s
     puts "Playing #{song}"
