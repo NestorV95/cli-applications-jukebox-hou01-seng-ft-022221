@@ -52,14 +52,15 @@ def run
  #run method that calls on all of these "helper" methods to implement the behavior of our program.
  input = gets.strip
     puts "Please enter a command:"
+    
   case input
-    when input === "help"
+    when === "help"
       help
-    when input === "list"
+    when === "list"
       list(songs)
-    when input === "play"
+    when === "play"
       play(songs)
-    when input === "exit"
+    when === "exit"
       exit_jukebox
     end
 end
