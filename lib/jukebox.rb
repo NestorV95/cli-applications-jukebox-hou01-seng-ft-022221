@@ -33,7 +33,7 @@ def play(songs)
  number = input.to_i
  v_num = [1,2,3,4,5,6,7,8,9]
     
-  if v_num.include?(input) || songs.include?(input)
+  if v_num.include?(input.to_i) || songs.include?(input)
      index = songs.index(input)
     puts "Playing #{song[index+1]}"
   else
