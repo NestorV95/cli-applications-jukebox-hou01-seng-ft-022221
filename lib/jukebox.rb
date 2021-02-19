@@ -30,7 +30,7 @@ require"pry"
 def play(songs)
  puts "Please enter a song name or number:"
  input = gets.chomp
-  songs.each {|song, index|
+  songs.each_with_index{|song, index|
    if input == song || input == (index+1).to_s
     puts "Playing #{song}"
   else
