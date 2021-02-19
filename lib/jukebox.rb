@@ -49,7 +49,6 @@ def exit_jukebox
 end
 
 def run 
- #run method that calls on all of these "helper" methods to implement the behavior of our program.
  input = gets.chomp
   puts "Please enter a command:"
   if input != 'exit' do 
@@ -60,7 +59,6 @@ def run
       list(songs)
       elsif input == 'play'
       play(songs)
-    end
-      exit_jukebox
-    end
+   end
+  exit_jukebox
 end
